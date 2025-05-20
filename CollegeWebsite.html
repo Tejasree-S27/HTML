@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Engineering College - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #003366;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #002244;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #002244;
+        }
+        ul.departments-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.departments-list li {
+            background-color: #e0e0e0;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mother Theresa Institute Of Engineering And Technology</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Our College</h2>
+            <p>Our engineering college offers quality education and excellent facilities to help students succeed in their careers.</p>
+            <p>Explore our departments, learn about admissions, and get in touch with us for more information.</p>
+        </section>
+        <section id="about">
+            <h2>About Our College</h2>
+            <p>Our engineering college is committed to providing excellent education and fostering innovation and research.</p>
+            <p>We have experienced faculty, modern labs, and a vibrant campus life.</p>
+        </section>
+        <section id="departments">
+            <h2>Our Departments</h2>
+            <ul class="departments-list">
+                <li>Computer Science and Engineering</li>
+                <li>Electrical Engineering</li>
+                <li>Mechanical Engineering</li>
+                <li>Civil Engineering</li>
+                <li>Electronics and Communication Engineering</li>
+            </ul>
+        </section>
+        <section id="admissions">
+            <h2>Admissions Information</h2>
+            <p>Admissions for the academic year 2024-2025 are now open.</p>
+            <p>Please check the eligibility criteria and application process on this page.</p>
+            <ul>
+                <li>Eligibility: High school diploma or equivalent</li>
+                <li>Application deadline: June 30, 2024</li>
+                <li>Entrance exam date: July 15, 2024</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Engineering College. All rights reserved.
+    </footer>
+</body>
+</html>
