@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes colorChange {
+            0% { background-color: rgb(160, 226, 226); }
+            25% { background-color: rgb(226, 160, 160); }
+            50% { background-color: rgb(226, 226, 160); }
+            75% { background-color: rgb(160, 226, 226); }
+            100% { background-color: rgb(160, 226, 226); }
+        }
+
+        body {
+            background-color: cornsilk;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background-color: rgb(160, 226, 226);
+            color: rgb(37, 42, 48);
+            font-size: 20px;
+            font-style: italic;
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid black;
+            width: 500px;
+            margin: 0 auto;
+            animation: colorChange 10s infinite;
+        }
+
+        .form-input {
+            font-size: 16px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            width: 80%;
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            font-size: 24px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+
+    <br><br>
+    <form action="" class="form-container">
+        <span class="form-label">Registration Form</span>
+
+        <input type="text" placeholder="Name" class="form-input"><br>
+        <input type="email" placeholder="Email" class="form-input"><br>
+        <input type="password" placeholder="Password" class="form-input"><br>
+        <input type="password" placeholder="Confirm Password" class="form-input"><br>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
